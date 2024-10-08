@@ -1,0 +1,18 @@
+p {
+    color:purple;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: gray
+    margin: 10px;
+}
+
+.info {
+    background-color:blue;
+    position: absolute;
+    top: 278px;
+    padding: 10px;
+    border: 20px;
+    border-style: solid;
+    border-color: red;
+}
