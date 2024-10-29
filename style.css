@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2abafd;
+    background-color: #299bff;
 }
 
 h1, h2 {
     color: #333;
 }
 
+/* Padding and margin */
 .content {
     padding: 20px;
     margin: 20px;
@@ -47,7 +48,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 100px 0;
     background-color: #193e9b;
     color: white;
 }
