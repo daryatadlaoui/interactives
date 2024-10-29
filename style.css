@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #299bff;
+    background-color: #76bfff;
 }
 
 h1, h2 {
@@ -24,7 +24,7 @@ h1, h2 {
 
 .links a {
     text-decoration: none;
-    color: #64a9f3;
+    color: #0057b5;
     opacity: 0.8;
 }
 
