@@ -124,68 +124,41 @@ footer p {
     padding: 20px;
   }
 }
-
-/* Container for the data visualization and text */
-.data-viz-container {
-  display: flex; /* Use flexbox to arrange items side by side */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Align the content vertically */
-  margin: 20px auto; /* Center the entire container on the page */
-  max-width: 900px; /* Limit the overall width of the section */
-  padding: 20px; /* Add spacing inside the container */
-  gap: 20px; /* Add space between the text and image */
-  border: 1px solid #ddd; /* Optional: Add a border */
-  border-radius: 8px; /* Optional: Round the corners */
-  background-color: #f9f9f9; /* Optional: Add a light background color */
+.data-viz {
+  border: 1px solid #ddd; /* Add a border around the section */
+  padding: 15px; /* Add spacing inside the section */
+  margin-bottom: 20px; /* Add space below the section */
+  border-radius: 8px; /* Slightly round the corners */
+  max-width: 600px; /* Limit the section width */
 }
 
-/* Styling for the text section */
-.data-viz-text {
-  flex: 1; /* Allow the text to take up available space */
-  max-width: 400px; /* Limit the width of the text block */
+.data-viz h3 {
+  font-size: 20px; /* Set the title size */
+  color: #0073e6; /* Make the title link blue */
 }
 
-/* Styling for the image section */
-.data-viz-image {
-  flex: 1; /* Allow the image to take up available space */
-  max-width: 400px; /* Limit the width of the image block */
-  text-align: center; /* Center the image inside its container */
+.data-viz p {
+  font-size: 16px;
+  color: #333; /* Neutral color for the description */
 }
 
-/* Styling for the preview image */
 .data-viz-preview {
   width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Limit the image's width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Slightly round the corners */
+  border-radius: 5px; /* Slightly round the image corners */
+  margin-top: 10px; /* Add spacing between the description and the image */
+  cursor: pointer; /* Make it clear that the image is clickable */
 }
 
-/* Optional: Link styling */
-.data-viz-container a {
+.data-viz a {
   text-decoration: none; /* Remove underline from links */
-  color: #0073e6; /* Blue color for links */
 }
 
-.data-viz-container a:hover {
-  text-decoration: underline; /* Underline links on hover */
+.data-viz a:hover {
+  text-decoration: underline; /* Underline the link on hover */
 }
 
-.data-description {
-  margin: 20px auto; /* Center the paragraph with some spacing */
-  max-width: 800px; /* Limit the width of the text */
-  font-size: 1.1rem; /* Slightly larger font size */
-  line-height: 1.6; /* Increase line spacing for readability */
-  color: #333; /* Darker text color */
-}
-
-.data-description a {
-  color: #0073e6; /* Link color */
-  text-decoration: none; /* Remove underline from the link */
-  font-weight: bold; /* Make the link stand out */
-}
-
-.data-description a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
 /* Blog container styles */
 .blog-container {
   display: grid; /* Use grid layout for a responsive grid of blog posts */
