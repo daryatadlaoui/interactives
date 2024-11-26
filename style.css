@@ -218,39 +218,39 @@ footer p {
   transform: translateY(-5px); /* Slightly lift the card */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
+/*Individual blog page styling */
 
-.blog-content {
-  max-width: 900px; /* Limiting the width to make the content look cleaner */
+.blog-post-page header {
+  background-color: #4a90e2; /* Blue header only for blog pages */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-page body {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #f3f4f6; /* Light gray background for subtle contrast */
+  color: #333; /* Dark gray text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-page .blog-content {
+  max-width: 800px; /* Limit the width of the content */
   margin: 30px auto;
   padding: 20px;
-  background-color: white;
+  background-color: white; /* White background for the blog content */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Image styling - Centering and resizing */
-.blog-content img {
-  display: block; /* Makes the image behave like a block element */
-  max-width: 80%; /* Resizes the image */
+.blog-post-page .blog-content img {
+  display: block;
+  max-width: 60%; /* Resizes images */
+  max-height: 400px; /* Prevents images from being too tall */
   height: auto; /* Maintains aspect ratio */
-  margin: 0 auto 20px auto; /* Centers the image and adds bottom margin */
-  border-radius: 10px; /* Rounded corners for the image */
-}
-
-/* Paragraph styling inside the blog content */
-.blog-content p {
-  line-height: 1.6; /* Improves readability by spacing out the text */
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
-/* Additional styling for links inside the blog content */
-.blog-content a {
-  color: #007bff; /* Blue color for links */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.blog-content a:hover {
-  text-decoration: underline;
+  margin: 20px auto; /* Centers the image */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
