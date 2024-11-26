@@ -260,3 +260,62 @@ footer p {
 .data-description a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
+/* Blog container styles */
+.blog-container {
+  display: grid; /* Use grid layout for a responsive grid of blog posts */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
+  gap: 20px; /* Space between blog posts */
+  max-width: 1200px; /* Limit width of the section */
+  margin: 20px auto; /* Center the section */
+}
+
+/* Blog post card styles */
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Image styles */
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Hover effects for blog post cards */
+.blog-post:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Title and description styling */
+.blog-post h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.blog-post p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Full blog post page styles */
+.blog-post-full {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.full-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
