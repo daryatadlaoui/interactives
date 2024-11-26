@@ -1,78 +1,4 @@
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #76bfff;
-}
 
-h1, h2 {
-    color: #333;
-}
-
-/* Padding and margin
-.content {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.links a {
-    text-decoration: none;
-    color: #0057b5;
-    opacity: 0.8;
-}
-
-.links a:hover {
-    opacity: 1;
-}
-
-.links {
-    text-align: center;
-    padding: 20px;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height:50%;
-}
-
-Opacity
-.header {
-    opacity: 0.9;
-}
-
-Alignment and position
-footer {
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 100px 0;
-    background-color: #193e9b;
-    color: white;
-}
-
-Z-index
-div.links {
-    position: relative;
-    z-index: 1;
-}
-
-Borders and overflow
-.content {
-    border: 2px solid #ddd;
-    overflow: hidden;
-} */
- 
 /* General Reset and Base Styles */
 * {
   margin: 0;
@@ -293,29 +219,38 @@ footer p {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
-/* Title and description styling */
-.blog-post h3 {
-  font-size: 1.3rem;
-  color: #333;
-  margin: 10px 0;
-}
-
-.blog-post p {
-  color: #666;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-/* Full blog post page styles */
-.blog-post-full {
-  max-width: 900px;
-  margin: 20px auto;
+.blog-content {
+  max-width: 900px; /* Limiting the width to make the content look cleaner */
+  margin: 30px auto;
   padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.full-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+/* Image styling - Centering and resizing */
+.blog-content img {
+  display: block; /* Makes the image behave like a block element */
+  max-width: 80%; /* Resizes the image */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0 auto 20px auto; /* Centers the image and adds bottom margin */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Paragraph styling inside the blog content */
+.blog-content p {
+  line-height: 1.6; /* Improves readability by spacing out the text */
   margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Additional styling for links inside the blog content */
+.blog-content a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
 }
