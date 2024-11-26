@@ -242,3 +242,21 @@ footer p {
 .data-viz-container a:hover {
   text-decoration: underline; /* Underline links on hover */
 }
+
+.data-description {
+  margin: 20px auto; /* Center the paragraph with some spacing */
+  max-width: 800px; /* Limit the width of the text */
+  font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.6; /* Increase line spacing for readability */
+  color: #333; /* Darker text color */
+}
+
+.data-description a {
+  color: #0073e6; /* Link color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Make the link stand out */
+}
+
+.data-description a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
