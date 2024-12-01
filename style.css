@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Lora', serif; /* Elegant serif font for text */
+  font-family: 'Lora', serif; /* Serif font for text, clean look */
   line-height: 1.8;
   color: #2c2c2c;
   background-color: #f3f4f6;
@@ -21,7 +21,7 @@ header {
 }
 
 .nav-menu {
-  display: flex;
+  display: flex; /*Create a flex box */
   justify-content: center;
   list-style: none;
 }
@@ -34,12 +34,12 @@ header {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif; /* Modern sans-serif font */
+  font-family: 'Poppins', sans-serif; /* Modern sans-serif font for nav menu */
   transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-  color: #ff6b6b; /* Accent color: coral red */
+  color: #ff6b6b; /* Accent color: coral red; appears when mouse hovers over each bar title */
 }
 
 /* Section Styles */
@@ -70,7 +70,7 @@ header {
   max-width: 100%;
   border-radius: 8px;
   margin: 20px 0;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Create a gray shadow around each section box */
 }
 
 /* Portfolio and Blog Items */
@@ -80,7 +80,7 @@ header {
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Create a gray shadow around each box in portfolio */
   max-width: 700px;
 }
 
@@ -92,7 +92,7 @@ header {
 
 .portfolio-item p, .blog-post p {
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #4a4a4a; /* Consistent font size and color with other pages */
 }
 
 /* Footer */
@@ -112,43 +112,42 @@ footer p {
 /* Mobile Optimization */
 @media (max-width: 768px) {
   .nav-menu {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center-align the stacked menu items */
   }
 
   .nav-menu li {
-    margin: 10px 0;
+    margin: 10px 0; /* Add vertical spacing between menu items */
   }
 
   .section {
-    padding: 20px;
+    padding: 20px; /* Reduce padding on smaller screens */
   }
 }
 
 /* Container for the data visualization and text */
 .data-viz-container {
-  display: flex; /* Use flexbox to arrange items side by side */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Align the content vertically */
+  display: flex; /* Create a flexbox */
+  justify-content: center; 
+  align-items: center; 
   margin: 20px auto; /* Center the entire container on the page */
-  max-width: 900px; /* Limit the overall width of the section */
+  max-width: 900px; 
   padding: 20px; /* Add spacing inside the container */
   gap: 20px; /* Add space between the text and image */
-  border: 1px solid #ddd; /* Optional: Add a border */
-  border-radius: 8px; /* Optional: Round the corners */
-  background-color: #f9f9f9; /* Optional: Add a light background color */
+  border: 1px solid #ddd; 
+  border-radius: 8px; /* Round corners */
+  background-color: #f9f9f9; 
 }
 
 /* Styling for the text section */
 .data-viz-text {
   flex: 1; /* Allow the text to take up available space */
-  max-width: 400px; /* Limit the width of the text block */
+  max-width: 400px; 
 }
 
 /* Styling for the image section */
 .data-viz-image {
-  /* flex: 1; /* Allow the image to take up available space */
-  max-height: 400px; /* Limit the width of the image block */
+  flex: 1;
   text-align: center; /* Center the image inside its container */
 }
 
@@ -159,7 +158,7 @@ footer p {
   border-radius: 5px; /* Slightly round the corners */
 }
 
-/* Optional: Link styling */
+/* Link styling */
 .data-viz-container a {
   text-decoration: none; /* Remove underline from links */
   color: #0073e6; /* Blue color for links */
@@ -170,8 +169,8 @@ footer p {
 }
 
 .data-description {
-  margin: 20px auto; /* Center the paragraph with some spacing */
-  max-width: 800px; /* Limit the width of the text */
+  margin: 20px auto; 
+  max-width: 800px; 
   font-size: 1.1rem; /* Slightly larger font size */
   line-height: 1.6; /* Increase line spacing for readability */
   color: #333; /* Darker text color */
@@ -179,12 +178,12 @@ footer p {
 
 .data-description a {
   color: #0073e6; /* Link color */
-  text-decoration: none; /* Remove underline from the link */
-  font-weight: bold; /* Make the link stand out */
+  text-decoration: none; 
+  font-weight: bold; /* Make link stand out */
 }
 
 .data-description a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
 /* Blog container styles */
@@ -192,7 +191,7 @@ footer p {
   display: grid; /* Use grid layout for a responsive grid of blog posts */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
   gap: 20px; /* Space between blog posts */
-  max-width: 1200px; /* Limit width of the section */
+  max-width: 1200px;
   margin: 20px auto; /* Center the section */
 }
 
@@ -200,18 +199,18 @@ footer p {
 .blog-post {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center the text */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
 }
 
 /* Image styles */
 .blog-image {
   width: 100%;
   height: auto;
-  border-radius: 5px; /* Slightly rounded corners */
+  border-radius: 5px;
 }
 
 /* Hover effects for blog post cards */
@@ -219,6 +218,7 @@ footer p {
   transform: translateY(-5px); /* Slightly lift the card */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
+
 /*Individual blog page styling */
 
 .blog-post-page header {
@@ -230,8 +230,8 @@ footer p {
 }
 
 .blog-post-page body {
-  font-family: 'Poppins', sans-serif; /* Modern, clean font */
-  background-color: #f3f4f6; /* Light gray background for subtle contrast */
+  font-family: 'Poppins', sans-serif; /* Consistent clean font */
+  background-color: #f3f4f6; /* Light gray background for contrast */
   color: #333; /* Dark gray text for readability */
   margin: 0;
   padding: 0;
@@ -241,19 +241,19 @@ footer p {
   max-width: 800px; /* Limit the width of the content */
   margin: 30px auto;
   padding: 20px;
-  background-color: white; /* White background for the blog content */
+  background-color: white; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post-page .blog-content img {
   display: block;
-  max-width: 60%; /* Resizes images */
+  max-width: 50%; /* Resizes images */
   max-height: 400px; /* Prevents images from being too tall */
   height: auto; /* Maintains aspect ratio */
   margin: 20px auto; /* Centers the image */
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
 }
 
 /* General styles */
@@ -319,7 +319,7 @@ a:hover {
   text-align: center;
   opacity: 0;
   transform: translateY(30px); /* Start slightly out of view */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fade-in */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Fade-in */
 }
 
 /* Activate section when in view */
@@ -337,12 +337,12 @@ a:hover {
 
 /*Section Body */
 .scroll-section p{
-  margin-bottom: 20px; /* Adjust the number to increase or decrease space */
-  line-height: 1.8; /* Optional: Makes the text easier to read */
+  margin-bottom: 20px;
+  line-height: 1.8; /* Make text more readable */
 }
 
 /* Footer */
-.blog-footer {
+/* .blog-footer {
   text-align: center;
   padding: 20px 0;
   background-color: #333;
@@ -358,13 +358,13 @@ a:hover {
   color: #00aaff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .blog-title {
+/* Mobile Optimization for Blog */
+@media (max-width: 768px) { /* Target specifically mobile devices */
+  .blog-title { /* Smaller font for readability */
     font-size: 2.5em;
   }
 
-  .blog-subtitle {
+  .blog-subtitle { /*Smaller font for readability */
     font-size: 1em;
   }
 }

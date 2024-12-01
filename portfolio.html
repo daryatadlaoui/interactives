@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> <!-- Optimize metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
@@ -10,7 +10,7 @@
   <!-- Navigation Bar -->
   <header>
     <nav>
-      <ul class="nav-menu">
+      <ul class="nav-menu"> <!-- Keep nav bar from index at top of page -->
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -20,20 +20,20 @@
   </header>
 
   <!-- Portfolio Section -->
-  <section id="Portfolio" class="section">
+  <section id="Portfolio" class="section"> <!-- Create a section for portfolio elements to use unique CSS -->
     <h2>Portfolio</h2>
     <h3><em>Click on the title or preview image to view the full interactive.</em></h3>
-    <div class="data-viz-container">
-      <div class="data-viz">
+    <div class="data-viz-container"> <!-- Create a unique container for the elements to style -->
+      <div class="data-viz"> <!-- Hyperlink viz webpage in title -->
         <h3><a href="https://public.flourish.studio/visualisation/20481329/" target="_blank">Bar Chart: Average Age During Arrest Incident by Race in Cook County, 1983-2023</a></h3>
-      <div class="data-viz-image">
+      <div class="data-viz-image"> <!-- Hyperlink viz webpage in image -->
           <a href="https://public.flourish.studio/visualisation/20481329/" target="_blank">
-            <img src="images/ageviz.jpg" alt="Preview of bar graph data visualization" class="data-viz-preview">
+            <img src="images/ageviz.jpg" alt="Preview of bar graph data visualization" class="data-viz-preview"> 
           </a>
       </div>
-      <div class="data-description">
+      <div class="data-description"> <!-- Create unique class to style text -->
         <p>
-          This visualization compiles data from the 
+          This visualization compiles data from the <!-- Hyperlink source attribution -->
           <a href="https://datacatalog.cookcountyil.gov/Legal-Judicial/Sentencing/tg8v-tm6u/about_data" target="_blank" rel="noopener noreferrer">
               Cook County State Attorney's Office
           </a> 
@@ -66,12 +66,12 @@
         <h3><a href="https://app.flourish.studio/visualisation/20482954/" target="_blank">Map: Chicago Homicides in Last Year</a></h3>
         <div class="data-viz-image">
           <a href="https://app.flourish.studio/visualisation/20482954/" target="_blank">
-            <img src="images/homicidesviz.jpg" alt="Preview of map data visualization" class="data-viz-preview">
+            <img src="images/homicidesviz.jpg" alt="Preview of map data visualization" class="data-viz-preview" style="width: 200px; height: 300px"> <!-- Use inline styling to make image smaller as it is portrait rather than landscape-->
           </a>
         </div>
         <div class="data-description">
           <p>
-            I used 
+            I used <!-- Use two separate hyperlinks here as I used two sources -->
             <a href="https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Wards-2023-/p293-wvbd/about_data" target="_blank" rel="noopener noreferrer">
               ward boundary data
             </a>
@@ -93,7 +93,7 @@
           </a>
       </div>
       <div class="data-description">
-        <p>
+        <p> <!-- Hyperlink my blog 3 page as this timeline is an accompaniment to this article -->
           This timeline accompanies my <a href=blog-post-3.html target="_blank">blog post</a> about James Soto's wrongful incarceration, using Medill's Knight Lab tools to create an interactive visualization of Soto's journey to freedom.
         </p>
       </div>
