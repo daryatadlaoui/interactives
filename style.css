@@ -219,43 +219,6 @@ footer p {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
-/*Individual blog page styling */
-
-.blog-post-page header {
-  background-color: #4a90e2; /* Blue header only for blog pages */
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post-page body {
-  font-family: 'Poppins', sans-serif; /* Consistent clean font */
-  background-color: #f3f4f6; /* Light gray background for contrast */
-  color: #333; /* Dark gray text for readability */
-  margin: 0;
-  padding: 0;
-}
-
-.blog-post-page .blog-content {
-  max-width: 800px; /* Limit the width of the content */
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white; 
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post-page .blog-content img {
-  display: block;
-  max-width: 50%; /* Resizes images */
-  max-height: 400px; /* Prevents images from being too tall */
-  height: auto; /* Maintains aspect ratio */
-  margin: 20px auto; /* Centers the image */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
-}
-
 /* General styles */
 body {
   margin: 0;
