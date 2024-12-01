@@ -147,8 +147,8 @@ footer p {
 
 /* Styling for the image section */
 .data-viz-image {
-  flex: 1; /* Allow the image to take up available space */
-  max-width: 400px; /* Limit the width of the image block */
+  /* flex: 1; /* Allow the image to take up available space */
+  /* max-width: 400px; /* Limit the width of the image block */
   text-align: center; /* Center the image inside its container */
 }
 
