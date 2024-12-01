@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Create a Line Graph on Flourish</title>
+  <title>How to Create a Pivot Table in Excel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,7 @@
   <!-- Header Section with Background Image -->
   <header class="blog-header" style="background-image: url('images/full-image-1.png');">
     <div class="header-content">
-      <h1 class="blog-title">How to Create a Line Graph on Flourish</h1>
+      <h1 class="blog-title">How to Create a Pivot Table in Excel</h1>
       <p class="blog-subtitle">A step-by-step guide</p>
     </div>
   </header>
@@ -21,28 +21,56 @@
     <section class="scroll-section">
       <h2>Introduction</h2>
       <p>
-        Over the last decade, data from the City of Chicago's Data Portal has revealed
-        startling trends in arrests by race. In this analysis, we explore these trends and discuss
-        their broader implications.
+       Creating data visualizations often requires the use of pivot tables to aggregate data. Without them, there is far too much data to import to platforms like Flourish -- 
+       and there is no real narrative to tell. Pivot tables allow us to take sums, averages, and the like to create meaningful visualizations like bar and line graphs.
+       Read on to learn how to create a pivot table using Excel.
       </p>
     </section>
 
     <section class="scroll-section">
-      <h2>The Numbers</h2>
+      <h2>Step 1: Find & Export Data</h2>
       <p>
-        Arrests among the Black community have decreased since 2020 but remain significantly higher than
-        any other reporting demographic. Meanwhile, arrests among the Hispanic population have steadily
-        increased since 2021.
+        Use any open-source database to find data to use in your visualization. I used the Chicago Data Portal as it had the annual arrest data I was looking for. 
+        Export your data as a CSV so that it's easily importable into Excel. 
       </p>
     </section>
 
     <section class="scroll-section">
-      <h2>Looking Ahead</h2>
+      <h2>Step 2: Clean, Filter & Aggregate Data</h2>
       <p>
-        These trends reflect systemic inequalities in policing practices. Addressing these disparities
-        requires both accountability and equitable reform at every level of the justice system.
+        Open your data in Excel. Now you need to narrow down exactly what you want to represent in your pivot table. It's helpful to get rid of any data that is irrelevant to your table. For my visualization, I wanted to eventually create a line graph
+        that would represent the annual arrests for different races over time, so I deleted most other columns related to charge type, gender and the like. I already had a column with offenders' race, but I needed to extract the year of each arrest
+        out of the 'Arrest Date' column. To do that, I created a new column named 'Year' and used the simple 'YEAR()'formula, copying it down for each row in the column. I also moved
+        the 'Year' and 'Race' columns next to each other for easy access.
       </p>
     </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 3: Create Pivot Table</h2>
+      <p>
+        Highlight the columns you want to include in your table -- in my case, 'Year' and 'Race.' Go to the 'Insert' tab and select 'PivotChart.'
+        In the popup that comes up, make sure to select 'New Worksheet' so the table is easily accessible.
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 4: Populate Pivot Table</h2>
+      <p>
+        You should now see a blank worksheet with a sidebar that contains the field names, filters, legend, axis and values. Drag whichever segment you want to be your rows into the 'Axis' box
+        and whichever segment you want to act as your columns into the 'Legend' box. Next, drag the data you wish to represent into the 'Values' box -- this is whatever you've chosen to take the sum
+        or average of. In my case, I wanted to know the total arrests made per race each year, so I dragged 'Race' into the values box, clicked the 'i' beside it to open the information box and 
+        chose 'Count.'
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+    <h2>Step 5: Import if Creating Visualization</h2>
+    <p>
+      Now that your table has been created, you can import it to a platform like Flourish to create a data visualization. Simply save the file as a CSV and import it into the platform of your choice.
+      Because Excel does not let you edit the table directly, you can use this platform to clean it up and get rid of any unnecessary columns and/or values -- in my case,
+      I got rid of the 'Blank' and 'Grand Total' rows and columns as I did not need to represent these visually. And there you have it -- you have successfully created a pivot table out of a spreadsheet!
+    </p>
+  </section>
   </main>
   <!-- Footer -->
   <footer>

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rewritten: A Q&A with James Soto</title>
+  <title>How to Create a Map on Flourish</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header Section with Background Image -->
   <header class="blog-header" style="background-image: url('images/full-image-2.png');">
     <div class="header-content">
-      <h1 class="blog-title">Rewritten: A Q&A with James Soto</h1>
-      <p class="blog-subtitle">An interview with the man who served the longest wrongful conviction sentence in Illinois history</p>
+      <h1 class="blog-title">How to Create a Map on Flourish</h1>
+      <p class="blog-subtitle">A step-by-step guide</p>
     </div>
   </header>
 
@@ -20,28 +20,74 @@
     <section class="scroll-section">
       <h2>Introduction</h2>
       <p>
-        Over the last decade, data from the City of Chicago's Data Portal has revealed
-        startling trends in arrests by race. In this analysis, we explore these trends and discuss
-        their broader implications.
+        Creating a map as a data visualization can be somewhat complicated -- it often requires the use of two spreadsheets and the filtering of data. 
+        Read on for an easy-to-follow guide to creating a map using Flourish from start to finish.
       </p>
     </section>
 
     <section class="scroll-section">
-      <h2>The Numbers</h2>
+      <h2>Step 1: Download & Export Region Data</h2>
       <p>
-        Arrests among the Black community have decreased since 2020 but remain significantly higher than
-        any other reporting demographic. Meanwhile, arrests among the Hispanic population have steadily
-        increased since 2021.
+        On Flourish, you need a dataset that contains regions data as well as one that contains points data. Often, datasets do not contain both, so you will need to import two different ones.
+        Use open-source portals like the Chicago Data Portal to find data with polygons -- these will flesh out the background of your map so that your points are not floating in space.
+        For my map, I used Chicago Data Portal's 'Ward Boundary Map,' linked in my portfolio, because it contains simple region data using polygons. Download this file as a GeoJSON so you can import 
+        it to Flourish later.
       </p>
     </section>
 
     <section class="scroll-section">
-      <h2>Looking Ahead</h2>
+      <h2>Step 2: Download & Export Point Data</h2>
       <p>
-        These trends reflect systemic inequalities in policing practices. Addressing these disparities
-        requires both accountability and equitable reform at every level of the justice system.
+        To create points on your map, you'll need to find a dataset with latitude & longitude points. I chose a dataset containing crimes in Chicago in the past year with exact 
+        coordinates of where the crimes had occurred. Export this data as a CSV.
       </p>
     </section>
+
+    <section class="scroll-section">
+      <h2>Step 3: Filter Point Data (Optional)</h2>
+      <p>
+        Oftentimes, these datasets contain too much information for Flourish to take in at once. When creating my map, I found it helpful to focus on one aspect of the crime data --
+        specifically homicides. I opened the dataset in Excel and filtered the 'Primary Description' to only include homicides (to do this, select the column, go to 'Data,' then 'Filter'
+        and only select the type you're looking for). Then, I copied the filtered data into a new spreadsheet and cleaned up the columns to include only the location type, lat/long points
+        and full coordinates. Export the data as a CSV.
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 4: Import Data into Flourish</h2>
+      <p>
+        Once you have both datasets, open Flourish and select 'Create New Visualization,' then 'Blank Projection Map.' In both the 'Regions' and 'Regions Geometry' sections, import the boundary dataset.
+        In the 'Points' section, upload your point dataset with lat/long values.
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 5: Match Up Map Data</h2>
+      <p>
+        Now you need to match up the table values to the map requirements. In the 'Regions Geometry,' choose the column with your polygons (likely column A) for 'Geometry' as well as 'IDs to Match.'
+        In 'Regions,' choose the same polygon column (again, likely column A) for 'ID.' This should successfully transmute the polygons onto the map. In 'Name,' choose whatever information you want to pop up when users scroll across your boundaries
+        -- I chose column B, community names. Next, you want to map out your points. In 'Points,' match up the 'Latitude' and 'Longitude' fields to the corresponding columns in your table. You could stop here, but I wanted to additionally provide information
+        about where each homicide took place, so I chose to make the location description the name of each point so that users would see this information if they hovered over any given point.
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 6: Label & Spruce Up Map</h2>
+      <p>
+        At this point, your map containing boundaries and points should appear in the preview. To make it more engaging, play around with colors, fonts and sizes. In the points layer, I made the radius of each point a bit wider and changed the color to red 
+        so they were easier to identify. Layout allows you to change the primary font of the map -- I liked the look of Roboto Condensed. Add a simple header and subhead as well as a bit of text describing the map and any trends that jump out to you,
+        and make sure to add an attribution in the footer -- Flourish allows you to add a hyperlink to the data portal. 
+      </p>
+    </section>
+
+    <section class="scroll-section"></section>
+      <h2>Step 7: Export & Publish</h2>
+      <p>
+        Once you're satisfied with your map, simply click the top-right-hand button 'Export & Publish' to create a webpage displaying your work. This also creates a shareable link.
+        And you're done!
+      </p>
+    </section>
+
   </main>
   <!-- Footer -->
   <footer>
